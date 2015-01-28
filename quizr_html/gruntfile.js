@@ -23,8 +23,6 @@ module.exports = function(grunt) {
                     './components/jquery/dist/jquery.js',
                     './components/bootstrap/dist/js/bootstrap.js',
                     './components/bootstrapValidator/dist/js/bootstrapValidator.min.js',
-                    './components/jquery-nicescroll/jquery.nicescroll.js',
-                    './assets/js/jquery.nicescroll.plus.js'
                 ],
                 dest: './assets/js/frontend-base.js'
             }
@@ -40,9 +38,7 @@ module.exports = function(grunt) {
                     "./assets/css/frontend-base.css":"./assets/less/twbootstrap/bootstrap.less",
                     "./assets/css/fontawesome.css":"./assets/less/font-awesome/font-awesome.less",
                     "./assets/css/theme.css":"./assets/less/twbootstrap/theme.less",
-                    "./assets/css/home.css":"./assets/less/twbootstrap/home.less",
                     "./assets/css/registree-page.css":"./assets/less/twbootstrap/registree-page.less",
-                    "./assets/css/ui-test.css":["./assets/less/twbootstrap/ui-test.less","./components/animate.css/animate.css"]
                 }
             }
         },
