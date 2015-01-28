@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quizr Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/frontend-base.css" media="screen">
+    <link rel="stylesheet" href="assets/css/theme.css" media="screen">
+    <link rel="stylesheet" href="assets/css/fontawesome.css" media="all">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body data-spy="scroll" data-target="#navbar-main">
+
+<div class="navbar navbar-inverse navbar-main navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">Quizr</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="ui-test.html" class="bottom-line">Куизове</a></li>
+                <li><a href="ui-test.html" class="bottom-line">Региистрация</a></li>
+                <li><a href="ui-test.html" class="bottom-line">Контакт</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<section id="master-head" class="clear inverse">
+
+    <div id="header-carousel" class="header-slider">
+
+        <figure class="item">
+            <img class="lazyOwl" data-src="assets/images/cover_a.jpg" alt="Kартинка 1"/>
+            <figcaption class="slide-text">
+                <h2 class="slide-header">Каво знаете за Алкохолика ?</h2>
+                <a href="#" class="btn btn-outline-light btn-lg">Направи куиза</a>
+            </figcaption>
+
+        </figure>
+
+        <figure class="item">
+            <img class="lazyOwl" data-src="assets/images/cover_sh.jpg" alt="Kартинка 2"/>
+            <figcaption class="slide-text">
+                <h2 class="slide-header">Колко добре познавате Шута?</h2>
+                <a href="#" class="btn btn-outline-light btn-lg">Направи куиза</a>
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+
+<section id="quizes" class="layout-section">
+    <div class="container">
+        <h2 class="section-header">Куизове</h2>
+        <h5 class="section-subheader">Алабала лорем импсум...</h5>
+
+        <div class="row">
+<div class="col-center col-sm-12">
+    <div class="quiz-list">
+        <a href="#" class="quiz" style="background: url(assets/images/cover_sh.jpg) no-repeat 80% 35%">
+            <h2>Колко добре поснавате Шута ?</h2>
+        </a>
+        <a href="#" class="quiz" style="background: url(assets/images/a2.jpg) no-repeat  0 40%">
+            <h2>Какво знаете за група Алкофилия ?</h2>
+        </a>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="info" class="layout-section brand">
+    <div class="container">
+        <h2 class="section-header no-subheader">Регистрация в Quizr.bg</h2>
+        <!--<h3 class="section-subheader">Section Subheader</h3>-->
+
+        <div class="row">
+            <p data-lorem="3s" class="text-center"></p>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-outline-light">Регистрирайте се</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="bottom-nav" class="darker-gray">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Quizr</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">За реклама</a></li>
+            <li><a href="#">Регистрирай се</a></li>
+            <li><a href="#"><i class="fa fa-lock" style="font-size: 20px;vertical-align: bottom; padding: 0 5px 0"></i> Вход за регистрирани</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<footer id="footer" class="inverse layout-section thiner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-justify">
+                <h3 class="text-center">За нас</h3>
+
+                <p data-lorem="4s"></p>
+
+                <p>
+                    <button type="button" class="btn btn-outline-light btn-block">Научи повече...</button>
+                </p>
+            </div>
+
+            <div class="col-sm-4 text-justify">
+                <h3 class="text-center">Пишете ни</h3>
+
+                <form id="send-message" method="post" role="form"
+                      data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                      data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                      data-bv-feedbackicons-validating="glyphicon glyphicon-refresh"
+                        >
+
+                    <div class="form-group">
+                        <label class="sr-only" for="message">Вашето запитване</label>
+                        <textarea
+                                id="message"
+                                name="message"
+                                class="form-control"
+                                placeholder="Вашето запитване"
+                                data-bv-notempty="true"
+                                data-bv-notempty-message="Запитването ви е доста кратко"
+                                data-bv-stringlength="true"
+                                data-bv-stringlength-min="10"
+                                data-bv-stringlength-message="Моля въведете най-малко 10 знака"
+                                ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="msgemail">Имейл за контакт</label>
+
+                        <div class="form-tip form-tip-top"></div>
+                        <input type="email"
+                               class="form-control"
+                               name="msgemail"
+                               id="msgemail"
+                               placeholder="Имейл за контакт"
+                               data-bv-notempty="true"
+                               data-bv-notempty-message="Моля задайте имейл"
+                               data-bv-emailaddress="true"
+                               data-bv-emailaddress-message="Зададения имейл е невалиден"
+                                >
+
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-light">Изпрати</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-sm-4">
+                <h3 class="text-center">Следвайте ни</h3>
+
+                <p id="follow-us" class="text-justify">
+                    <a class="twitter" href="#"><i class="fa fa-twitter-square fa-4x"></i></a>
+                    <a class="facebook" href="#"><i class="fa fa-facebook-square fa-4x"></i></a>
+                    <a class="linkedin" href="#"><i class="fa fa-linkedin-square fa-4x"></i></a>
+                    <a class="google" href="#"><i class="fa fa-google-plus-square fa-4x"></i></a>
+                    <span class="stretch"></span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="copyright" class="text-center dark-gray"><span class="small">Copyright © 2014 Quizr. All Rights Reserved.</span></div>
+
+<script src="assets/js/frontend-base.js"></script>
+
+<!--START development helpers-->
+<script src="components/holderjs/holder.js"></script>
+<script src="components/loremjs/lorem.js"></script>
+<!--END development helpers-->
+
+
+<!--START PAGE PLUGINS-->
+<!--<script src="assets/js/jquery.backstretch.js"></script>-->
+<script src="components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script>
+<script src="components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="assets/js/jquery.fittext.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<!--END PAGE PLUGINS-->
+
+<script src="assets/js/init-home.js"></script>
+</body>
+</html>

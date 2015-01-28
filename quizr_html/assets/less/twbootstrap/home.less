@@ -1,0 +1,80 @@
+/**
+ * @project         medbase
+ * @version         1.0  26-09-2014
+ * @author          New Identity http://new-identity.eu  - zarro
+ * @copyright       Copyright (C) 2009 - 2014 New Identity. All rights reserved.
+ * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+//Import specifc css or less for this page css file will be notes as not found don't pay attention to that
+@import "variables";
+@import "../../../components/bootstrap/less/mixins";
+@import "../../../components/lesshat/build/lesshat-prefixed.less";
+@import "project-mixins.less";
+@import "../../components/animate.css/animate.css";
+@import "project-mixins";
+
+@import "../../components/bootstrapValidator/dist/css/bootstrapValidator.css";
+@import "../plugins/bootstrap-select";
+
+
+
+#search-place,
+#locator {
+    .lh-transition(all .4);
+}
+
+#search-place {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    color: @gray;
+    z-index: -1;
+}
+
+#locator {
+    cursor:pointer;
+    color: darkred;
+    z-index: 1;
+    &:hover {
+        color: red;
+    }
+}
+
+
+.search {
+    #search-place {
+        pointer-events: auto;
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #locator {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+.category-navigation {
+    text-align: center;
+    padding-top: (@line-height-computed*2);
+
+    & .category-link  {
+        padding: 25px 0;
+        color: white;
+        .lh-transition(all .4s);
+        &:hover {
+            background-color: darken(@gray, 20%);
+            text-decoration: none;
+
+        }
+        img.img-responsive {
+            margin: 0 auto;
+            max-width: 120px;
+        }
+    }
+
+
+}
