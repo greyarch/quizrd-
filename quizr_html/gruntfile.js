@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                     "./assets/css/frontend-base.css":"./assets/less/twbootstrap/bootstrap.less",
                     "./assets/css/fontawesome.css":"./assets/less/font-awesome/font-awesome.less",
                     "./assets/css/theme.css":"./assets/less/twbootstrap/theme.less",
-                    "./assets/css/registree-page.css":"./assets/less/twbootstrap/registree-page.less",
+                    "./assets/css/registree-page.css":"./assets/less/twbootstrap/registree-page.less"
                 }
             }
         },
