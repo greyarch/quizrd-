@@ -1,0 +1,52 @@
+//------------------------------------------------------------------------------------
+// @project         medbase
+// @version         1.0  22-10-2014
+// @author          New Identity http://new-identity.eu  - zarro
+// @copyright       Copyright (C) 2009 - 2014 New Identity. All rights reserved.
+// @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+//------------------------------------------------------------------------------------
+@medbase-font-path: "../fonts/";
+
+@font-face {
+    font-family: 'medbase';
+    src:url('@{medbase-font-path}med_base.eot?-u5z1j4');
+    src:url('@{medbase-font-path}med_base.eot?#iefix-u5z1j4') format('embedded-opentype'),
+    url('@{medbase-font-path}med_base.woff?-u5z1j4') format('woff'),
+    url('@{medbase-font-path}med_base.ttf?-u5z1j4') format('truetype'),
+    url('@{medbase-font-path}med_base.svg?-u5z1j4#med_base') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'med_base';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clinic:before {
+    content: "\e600";
+}
+.icon-dental-tech:before {
+    content: "\e601";
+}
+.icon-dentists:before {
+    content: "\e602";
+}
+.icon-doctor:before {
+    content: "\e603";
+}
+.icon-labs:before {
+    content: "\e604";
+}
+.icon-x-ray:before {
+    content: "\e605";
+}

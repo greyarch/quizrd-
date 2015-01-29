@@ -1,0 +1,103 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.2
+*/
+
+.medbase-header .owl-controls {
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.medbase-header .owl-controls .owl-buttons div {
+
+	color: @btn-default-color;
+	display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+	zoom: 1;
+    height: 64px;
+
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+    font: normal normal normal 64px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.medbase-header .owl-buttons .owl-prev {
+    left: 3%;
+    &:before {
+        content: "\f053";
+    }
+}
+
+.medbase-header .owl-buttons .owl-next {
+    right: 3%;
+    &:before {
+        content: "\f054";
+    }
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.medbase-header .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.medbase-header .owl-controls .owl-pagination {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.medbase-header .owl-controls .owl-page {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.medbase-header .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+    .lh-border-radius(20px);
+	background: @gray;
+}
+
+.medbase-header .owl-controls .owl-page.active span,
+.medbase-header .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+.medbase-header .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: @btn-default-color;
+	padding: 2px 10px;
+	font-size: 12px;
+    .lh-border-radius(30px);
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(../../../images/AjaxLoader.gif) no-repeat center center
+}
+
+.owl-item .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

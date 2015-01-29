@@ -1,0 +1,11 @@
+#Windows junk
+*.db
+
+#phpStorm stuff
+.idea/
+cache/*
+tmp/*
+!tmp/index.html
+components/
+node_modules/
+assets/css/*
